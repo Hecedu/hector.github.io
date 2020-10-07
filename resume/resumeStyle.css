@@ -1,0 +1,61 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0;
+}
+
+header {
+    font: 15px Roboto, sans-serif;
+    text-align: center;
+    background-color: #303030;
+    color: white;
+    grid-column: 1 / 4;
+}
+
+
+footer {
+    font: 15px Roboto, sans-serif;
+    text-align: center;
+    background-color: #303030;
+    color: white;
+    grid-column: 1 / 4;
+}
+
+@media all and (max-width: 700px) {
+    aside,
+    article {
+        grid-column: 1 / 4;
+    }
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+section {
+    font: 15px Roboto, sans-serif;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+#italics {
+    font-style: italic;
+}
+#profile {
+    height: 270px;
+    width: 250px;
+    border-radius: 50%;
+}
+#margin {
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+body {
+    margin: 0% !important;
+}
+
+
+
+

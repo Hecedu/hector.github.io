@@ -8,133 +8,112 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <style>
-        header {
-            font: 15px Roboto, sans-serif;
-            text-align: center;
-            background-color: #303030;
-            color: white;
-        }
-
-        h2 {
-            font-weight: bolder;
-        }
-
-        #main {
-            font: 15px Roboto, sans-serif;
-            margin-top: 4em;
-            margin-bottom: 10em;
-            margin-right: 35em;
-            margin-left: 30em;
-        }
-
-        body {
-            margin: 0% !important;
-        }
-
-        #italics {
-            font-style: italic;
-        }
-        #profile {
-            height: 270px;
-            width: 250px;
-            border-radius: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="resumeStyle.css">
 </head>
 <body>
     <main>
-        <header>
-            <br>
-            <img id="profile" src="profile.png" alt="profile">
-            <h1>Héctor Eduardo Magaña</h1> <hr>
-            <P id="italics"> Creative developer with experience in a variety of programming languages and image manipulation software. Currently pursuing a formal degree in Computer Science </P>
-            <p id="headtext"><img src="mail-24.png" alt="mail">&nbsp; &nbsp;<a href="hector.maganahdez@gmail.com" style="color:#FFFF;">hector.maganahdez@gmail.com</a> | Ephraim,Utah | Phone Number: 801-822-7188 <br></p> <br>
-        </header>
-        <div id="main">
-            <section id="education">
-                <h2>Education:</h2>
-                <dl>
-                    <dt>Colegio Anglo Americano:</dt>
-                    <dd>Basic education</dd>
-                    <dt>ArtCode (interactive media academy):</dt>
-                    <dd>Awarded a full ride scholarship and completed a course for video game development (duration of 6 months) using the C# programming language and Unity software. The main modules of the course were digital art, programming and marketing. </dd>
-                    <dt>Snow College:</dt>
-                    <dd>
-                        <ul>
-                            <li>Associate of pre-engineering.</li>
-                            <li>Associate of science.</li>
-                        </ul>
-                    </dd>
-                </dl>
-            </section>
-
-            <section id="relatedWorkExperience">
-                <h2>Related Work Experience:</h2>
-                <dl>
-                    <dt>Volunteer Math Tutor:</dt>
-                    <dd>Give assistance to high school students with their math problems and prepare them for tests.</dd>
-                    <dt>Math Lab Tutor:</dt>
-                    <dd>Help students with math topics they struggle with and prepare them for tests in all math courses up to calculus III.</dd>
-                    <dt>Physics TA:</dt>
-                    <dd>Grade student homework<br> 
-                        Prepare and help students through experiments and experiences related to the coursework</dd>
-                    <dt>Legislative Representative of STEM:</dt>
-                    <dd>Collaborate with the faculty representative for STEM to improve campus community involvement and increase exposure to STEM fields and participation in division sponsored events.<br>
-                        Represent the fields that fall under Science, Technology, Engineering and Math to the Executive Branch.</dd>
-                </dl>
-            </section>
-
-            <section id="coreSkills">
-                <h2>Core Skills:</h2>
-                <dl>
-                    <dt>Computer Science:</dt>
-                    <dd>
-                        <ul>
-                            <li>Proficiency with languages such as C++, C#, Java, Python, MIPS and Javascript.</li>
-                            <li>Knowledge of Data Structures and Algorithms design.</li>
-                            <li>Proficiency in GIT for project management and Visual Studio IDE.</li>
-                        </ul>
-                    <dt>Mathematics and Physics:</dt>
-                    <dd>
-                        <ul>
-                            <li>Literacy in advanced mathematics.</li>
-                            <li>Complete coursework of analysis, discrete mathematics and linear algebra.</li>
-                            <li>Complete coursework of Physics for Engineers and Introductory Modern Physics.</li>
-                        </ul>
-                    </dd>
-                </dl>  
-            </section>
-
-            <section id="additionalSkills">
-                <h2>Additional Skills:</h2>
-                <ul>
-                    <li>Languages: can speak, read and write in Spanish and English. Native fluency in spanish, fluent in English.</li>
-                    <li>Graphic Design and Music: 5+ years of knowledge and foundations.</li>
-                    <li>Illustration Software: 6+ years of experience with Adobe Photoshop and Illustrator.</li>
-                    <li>3D Modeling: Experience with both Autodesk Maya and Blender 3D modeling software for 6 years</li>
-                    <li>Leadership and project management skills: Experience with event planning, project organization and team management.</li>
-                </ul>
-            </section>
-
-            <section id="coursework">
-                <h2>Coursework:</h2>
-                <ul>
-                    <li>MATH 1050 College Algebra</li>
-                    <li>MATH 1060 Trigonometry</li>
-                    <li>MATH 1210 Calculus I</li>
-                    <li>MATH 1220 Calculus II</li>
-                    <li>MATH 2210 Calculus III</li>
-                    <li>MATH 2250 Linear Algebra/ Differential Equations</li>
-                    <li>MATH 3310 Discrete Mathematics</li>
-                    <li>PHYS 2210 Physics for Scientists and Engineers I</li>
-                    <li>PHYS 2220 Physics for Scientists and Engineers II</li>
-                    <li>CS 1410 Object Oriented Programming</li>
-                    <li>CS 2420 Data Structures and Algorithms</li>
-                    <li>CS 2810 Computer Architecture</li>
-                    <li>PHYS 2710 Introductory Modern Physics</li>
-                </ul>
-            </section>
+        <div class="grid">
+            <header>
+                <br>
+                <img id="profile" src="profile.png" alt="profile">
+                <h1>Héctor Eduardo Magaña</h1> <hr>
+                <div id="margin">
+                    <br /> <P id="italics"> Creative developer with experience in a variety of programming languages and image manipulation software. Currently pursuing a formal degree in Computer Science </P> <br />
+                </div>
+                </header>
+            
+            <aside class="sidebar-left">
+                <section id="coreSkills">
+                    <h2>Core Skills:</h2>
+                    <dl>
+                        <dt>Computer Science:</dt>
+                        <dd>
+                            <ul>
+                                <li>Proficiency with languages such as C++, C#, Java, Python, MIPS and Javascript.</li>
+                                <li>Knowledge of Data Structures and Algorithms design.</li>
+                                <li>Proficiency in GIT for project management and Visual Studio IDE.</li>
+                            </ul>
+                        <dt>Mathematics and Physics:</dt>
+                        <dd>
+                            <ul>
+                                <li>Literacy in advanced mathematics.</li>
+                                <li>Complete coursework of analysis, discrete mathematics and linear algebra.</li>
+                                <li>Complete coursework of Physics for Engineers and Introductory Modern Physics.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </section>
+            </aside>
+            <article>
+                <section id="education">
+                    <h2>Education:</h2>
+                    <dl>
+                        <dt>Colegio Anglo Americano:</dt>
+                        <dd>Basic education</dd>
+                        <dt>ArtCode (interactive media academy):</dt>
+                        <dd>Awarded a full ride scholarship and completed a course for video game development (duration of 6 months) using the C# programming language and Unity software. The main modules of the course were digital art, programming and marketing. </dd>
+                        <dt>Snow College:</dt>
+                        <dd>
+                            <ul>
+                                <li>Associate of pre-engineering.</li>
+                                <li>Associate of science.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </section>
+                <section id="coursework">
+                    <h2>Coursework:</h2>
+                    <ul>
+                        <li>MATH 1050 College Algebra</li>
+                        <li>MATH 1060 Trigonometry</li>
+                        <li>MATH 1210 Calculus I</li>
+                        <li>MATH 1220 Calculus II</li>
+                        <li>MATH 2210 Calculus III</li>
+                        <li>MATH 2250 Linear Algebra/ Differential Equations</li>
+                        <li>MATH 3310 Discrete Mathematics</li>
+                        <li>PHYS 2210 Physics for Scientists and Engineers I</li>
+                        <li>PHYS 2220 Physics for Scientists and Engineers II</li>
+                        <li>CS 1410 Object Oriented Programming</li>
+                        <li>CS 2420 Data Structures and Algorithms</li>
+                        <li>CS 2810 Computer Architecture</li>
+                        <li>PHYS 2710 Introductory Modern Physics</li>
+                    </ul>
+                </section>
+            </article>
+            <aside class="sidebar-right">
+                <section id="relatedWorkExperience">
+                    <h2>Related Work Experience:</h2>
+                    <dl>
+                        <dt>Volunteer Math Tutor:</dt>
+                        <dd>Give assistance to high school students with their math problems and prepare them for tests.</dd>
+                        <dt>Math Lab Tutor:</dt>
+                        <dd>Help students with math topics they struggle with and prepare them for tests in all math courses up to calculus III.</dd>
+                        <dt>Physics TA:</dt>
+                        <dd>
+                            Grade student homework<br>
+                            Prepare and help students through experiments and experiences related to the coursework
+                        </dd>
+                        <dt>Legislative Representative of STEM:</dt>
+                        <dd>
+                            Collaborate with the faculty representative for STEM to improve campus community involvement and increase exposure to STEM fields and participation in division sponsored events.<br>
+                            Represent the fields that fall under Science, Technology, Engineering and Math to the Executive Branch.
+                        </dd>
+                    </dl>
+                </section>
+                <section id="additionalSkills">
+                    <h2>Additional Skills:</h2>
+                    <ul>
+                        <li>Languages: can speak, read and write in Spanish and English. Native fluency in spanish, fluent in English.</li>
+                        <li>Graphic Design and Music: 5+ years of knowledge and foundations.</li>
+                        <li>Illustration Software: 6+ years of experience with Adobe Photoshop and Illustrator.</li>
+                        <li>3D Modeling: Experience with both Autodesk Maya and Blender 3D modeling software for 6 years</li>
+                        <li>Leadership and project management skills: Experience with event planning, project organization and team management.</li>
+                    </ul>
+                </section>
+            </aside>   
+            <footer>
+                <p id="headtext"><img src="mail-24.png" alt="mail">&nbsp; &nbsp;<a href="hector.maganahdez@gmail.com" style="color:#FFFF;">hector.maganahdez@gmail.com</a> | Ephraim,Utah | Phone Number: 801-822-7188 <br></p> <br>
+            </footer>
         </div>
     </main>
 </body>
