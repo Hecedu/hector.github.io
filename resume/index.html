@@ -10,6 +10,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="resumeStyle.css">
+    <script>
+        // JavaScript source code
+        function education(school, degree) {
+            this.school = school;
+            this.degree = degree;
+        }
+
+        let r1 = new education('Colegio Anglo Americano:', 'Basic education');
+        let r2 = new education('ArtCode (interactive media academy):', 'Awarded a full ride scholarship and completed a course for video game development (duration of 6 months) using the C# programming language and Unity software. The main modules of the course were digital art, programming and marketing.');
+        let r3 = new education('Snow College:', 'Associate of pre-engineering, Associate of science.');
+
+        let educations = [r1, r2, r3];
+
+
+    </script>
 </head>
 <body>
     <main>
@@ -47,20 +62,17 @@
             </aside>
             <article>
                 <section id="education">
-                    <h2>Education:</h2>
-                    <dl>
-                        <dt>Colegio Anglo Americano:</dt>
-                        <dd>Basic education</dd>
-                        <dt>ArtCode (interactive media academy):</dt>
-                        <dd>Awarded a full ride scholarship and completed a course for video game development (duration of 6 months) using the C# programming language and Unity software. The main modules of the course were digital art, programming and marketing. </dd>
-                        <dt>Snow College:</dt>
-                        <dd>
-                            <ul>
-                                <li>Associate of pre-engineering.</li>
-                                <li>Associate of science.</li>
-                            </ul>
-                        </dd>
-                    </dl>
+                    <script>
+                        document.write('<h2>Education:</h2>');
+                        document.write('<dl>');
+                        for (let education of educations) {
+                            document.write(
+                                `<dt>${education.school}</dt>
+                                 <dd>${education.degree}</dd>`
+                            )
+                        };
+                        document.write('</dl>');
+                    </script>
                 </section>
                 <section id="coursework">
                     <h2>Coursework:</h2>
