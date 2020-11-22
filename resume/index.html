@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="resumeStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script>
         // JavaScript source code
         function education(school, degree) {
@@ -25,107 +25,137 @@
 
 
     </script>
+    <style>
+        img {
+            display: block;
+            max-width: 25%;
+            height: auto;
+        }
+        .margindoc {
+            padding-left: 5em;
+            padding-right: 5em;
+            padding-top: 1em;
+        }
+        hr.white {
+            border-top: 1px solid white;
+        }
+        @media only screen and (max-width: 600px) {
+            .margindoc {
+                padding-left: 1em;
+                padding-right: 1em;
+                padding-top: 1em;
+            }
+            img {
+                display: block;
+                max-width: 40%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <main>
-        <div class="grid">
-            <header>
+    <main >
+        <div class="grid margindoc ">
+            <header class="shadow text-center p-3 mb-2 bg-dark text-white rounded-lg">
                 <br>
-                <img id="profile" src="profile.png" alt="profile">
-                <h1>Héctor Eduardo Magaña</h1> <hr>
-                <div id="margin">
+                <img id="profile" src="profile.png" class="shadow rounded-circle mx-auto d-block"  alt="profile">
+                <h1 >Héctor Eduardo Magaña</h1> <hr class="white">
+                <div>
                     <br /> <P id="italics"> Creative developer with experience in a variety of programming languages and image manipulation software. Currently pursuing a formal degree in Computer Science </P> <br />
                 </div>
-                </header>
-            
-            <aside class="sidebar-left">
-                <section id="coreSkills">
-                    <h2>Core Skills:</h2>
-                    <dl>
-                        <dt>Computer Science:</dt>
-                        <dd>
-                            <ul>
-                                <li>Proficiency with languages such as C++, C#, Java, Python, MIPS and Javascript.</li>
-                                <li>Knowledge of Data Structures and Algorithms design.</li>
-                                <li>Proficiency in GIT for project management and Visual Studio IDE.</li>
-                            </ul>
-                        <dt>Mathematics and Physics:</dt>
-                        <dd>
-                            <ul>
-                                <li>Literacy in advanced mathematics.</li>
-                                <li>Complete coursework of analysis, discrete mathematics and linear algebra.</li>
-                                <li>Complete coursework of Physics for Engineers and Introductory Modern Physics.</li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </section>
-            </aside>
-            <article>
-                <section id="education">
-                    <script>
-                        document.write('<h2>Education:</h2>');
-                        document.write('<dl>');
-                        for (let education of educations) {
-                            document.write(
-                                `<dt>${education.school}</dt>
-                                 <dd>${education.degree}</dd>`
-                            )
-                        };
-                        document.write('</dl>');
-                    </script>
-                </section>
-                <section id="coursework">
-                    <h2>Coursework:</h2>
-                    <ul>
-                        <li>MATH 1050 College Algebra</li>
-                        <li>MATH 1060 Trigonometry</li>
-                        <li>MATH 1210 Calculus I</li>
-                        <li>MATH 1220 Calculus II</li>
-                        <li>MATH 2210 Calculus III</li>
-                        <li>MATH 2250 Linear Algebra/ Differential Equations</li>
-                        <li>MATH 3310 Discrete Mathematics</li>
-                        <li>PHYS 2210 Physics for Scientists and Engineers I</li>
-                        <li>PHYS 2220 Physics for Scientists and Engineers II</li>
-                        <li>CS 1410 Object Oriented Programming</li>
-                        <li>CS 2420 Data Structures and Algorithms</li>
-                        <li>CS 2810 Computer Architecture</li>
-                        <li>PHYS 2710 Introductory Modern Physics</li>
-                    </ul>
-                </section>
-            </article>
-            <aside class="sidebar-right">
-                <section id="relatedWorkExperience">
-                    <h2>Related Work Experience:</h2>
-                    <dl>
-                        <dt>Volunteer Math Tutor:</dt>
-                        <dd>Give assistance to high school students with their math problems and prepare them for tests.</dd>
-                        <dt>Math Lab Tutor:</dt>
-                        <dd>Help students with math topics they struggle with and prepare them for tests in all math courses up to calculus III.</dd>
-                        <dt>Physics TA:</dt>
-                        <dd>
-                            Grade student homework<br>
-                            Prepare and help students through experiments and experiences related to the coursework
-                        </dd>
-                        <dt>Legislative Representative of STEM:</dt>
-                        <dd>
-                            Collaborate with the faculty representative for STEM to improve campus community involvement and increase exposure to STEM fields and participation in division sponsored events.<br>
-                            Represent the fields that fall under Science, Technology, Engineering and Math to the Executive Branch.
-                        </dd>
-                    </dl>
-                </section>
-                <section id="additionalSkills">
-                    <h2>Additional Skills:</h2>
-                    <ul>
-                        <li>Languages: can speak, read and write in Spanish and English. Native fluency in spanish, fluent in English.</li>
-                        <li>Graphic Design and Music: 5+ years of knowledge and foundations.</li>
-                        <li>Illustration Software: 6+ years of experience with Adobe Photoshop and Illustrator.</li>
-                        <li>3D Modeling: Experience with both Autodesk Maya and Blender 3D modeling software for 6 years</li>
-                        <li>Leadership and project management skills: Experience with event planning, project organization and team management.</li>
-                    </ul>
-                </section>
-            </aside>   
-            <footer>
-                <p id="headtext"><img src="mail-24.png" alt="mail">&nbsp; &nbsp;<a href="hector.maganahdez@gmail.com" style="color:#FFFF;">hector.maganahdez@gmail.com</a> | Ephraim,Utah | Phone Number: 801-822-7188 <br></p> <br>
+            </header>
+            <div class="margindoc">
+                <aside class="sidebar-left">
+                    <section id="coreSkills">
+                        <h2>Core Skills:</h2>
+                        <dl>
+                            <dt>Computer Science:</dt>
+                            <dd>
+                                <ul>
+                                    <li>Proficiency with languages such as C++, C#, Java, Python, MIPS and Javascript.</li>
+                                    <li>Knowledge of Data Structures and Algorithms design.</li>
+                                    <li>Proficiency in GIT for project management and Visual Studio IDE.</li>
+                                </ul>
+                            <dt>Mathematics and Physics:</dt>
+                            <dd>
+                                <ul>
+                                    <li>Literacy in advanced mathematics.</li>
+                                    <li>Complete coursework of analysis, discrete mathematics and linear algebra.</li>
+                                    <li>Complete coursework of Physics for Engineers and Introductory Modern Physics.</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+                </aside>
+                <article>
+                    <section id="education">
+                        <script>
+                            document.write('<h2>Education:</h2>');
+                            document.write('<dl>');
+                            for (let education of educations) {
+                                document.write(
+                                    `<dt>${education.school}</dt>
+                                     <dd>${education.degree}</dd>`
+                                )
+                            };
+                            document.write('</dl>');
+                        </script>
+                    </section>
+                    <section id="coursework">
+                        <h2>Coursework:</h2>
+                        <ul>
+                            <li>MATH 1050 College Algebra</li>
+                            <li>MATH 1060 Trigonometry</li>
+                            <li>MATH 1210 Calculus I</li>
+                            <li>MATH 1220 Calculus II</li>
+                            <li>MATH 2210 Calculus III</li>
+                            <li>MATH 2250 Linear Algebra/ Differential Equations</li>
+                            <li>MATH 3310 Discrete Mathematics</li>
+                            <li>PHYS 2210 Physics for Scientists and Engineers I</li>
+                            <li>PHYS 2220 Physics for Scientists and Engineers II</li>
+                            <li>CS 1410 Object Oriented Programming</li>
+                            <li>CS 2420 Data Structures and Algorithms</li>
+                            <li>CS 2810 Computer Architecture</li>
+                            <li>PHYS 2710 Introductory Modern Physics</li>
+                        </ul>
+                    </section>
+                </article>
+                <aside class="sidebar-right">
+                    <section id="relatedWorkExperience">
+                        <h2>Related Work Experience:</h2>
+                        <dl>
+                            <dt>Volunteer Math Tutor:</dt>
+                            <dd>Give assistance to high school students with their math problems and prepare them for tests.</dd>
+                            <dt>Math Lab Tutor:</dt>
+                            <dd>Help students with math topics they struggle with and prepare them for tests in all math courses up to calculus III.</dd>
+                            <dt>Physics TA:</dt>
+                            <dd>
+                                Grade student homework<br>
+                                Prepare and help students through experiments and experiences related to the coursework
+                            </dd>
+                            <dt>Legislative Representative of STEM:</dt>
+                            <dd>
+                                Collaborate with the faculty representative for STEM to improve campus community involvement and increase exposure to STEM fields and participation in division sponsored events.<br>
+                                Represent the fields that fall under Science, Technology, Engineering and Math to the Executive Branch.
+                            </dd>
+                        </dl>
+                    </section>
+                    <section id="additionalSkills">
+                        <h2>Additional Skills:</h2>
+                        <ul>
+                            <li>Languages: can speak, read and write in Spanish and English. Native fluency in spanish, fluent in English.</li>
+                            <li>Graphic Design and Music: 5+ years of knowledge and foundations.</li>
+                            <li>Illustration Software: 6+ years of experience with Adobe Photoshop and Illustrator.</li>
+                            <li>3D Modeling: Experience with both Autodesk Maya and Blender 3D modeling software for 6 years</li>
+                            <li>Leadership and project management skills: Experience with event planning, project organization and team management.</li>
+                        </ul>
+                        <br />
+                    </section>
+                </aside>
+               </div>
+            <footer class="text-center">
+                <hr/>
+                <p><a href="hector.maganahdez@gmail.com">hector.maganahdez@gmail.com</a> | Ephraim,Utah | Phone Number: 801-822-7188 <br></p> <br>
             </footer>
         </div>
     </main>
